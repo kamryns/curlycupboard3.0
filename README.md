@@ -1,2 +1,124 @@
 # curlycupboard3.0
-the curliest cupboard (updated) on the planet
+the curliest cupboard on the planet
+# Time Box Tri 3
+# Team NARKS
+## [Scrum Board](https://github.com/kamryns/curly-cupboard/projects/1)
+## [Github Repository](https://github.com/kamryns/curly-cupboard)
+
+***
+<table id="readmeinformation">
+
+<tr>
+<th>Tasks</th>
+<th>Contributors</th>
+<th>Github ID/ Profile</th>
+<th>Individual Repo</th>
+<th>Commits</th>
+<th>Pair Journal</th>
+</tr>
+
+<tr>
+<td>Kamryn</td>
+<td>
+<a href="https://github.com/kamryns" target="_blank">kamryns</a>
+</td>
+<td>
+<a href= target="_blank">Github Admin</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Akamryns" target="_blank">Scrum Board</a>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=kamryns" target="_blank">Commits</a>
+</td>
+<td>
+<a href="https://docs.google.com/document/d/18Cm6Uxjgn6FWhXDQIEWuEGwQEmVX--wKHCiL4ZbjRC0/edit" target="_blank"> Kamryn Journal</a>
+</td>
+</tr>
+
+<tr>
+<td>Riya</td>
+<td>
+<a href="https://github.com/ranand2445" target="_blank">ranand2445</a>
+</td>
+<td>
+<a href="" target="_blank">Scrum Master</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Aranand2445" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=ranand2445" target="_blank">Commits</a>
+</td>
+<td>
+<a href="https://docs.google.com/document/d/1LvhXmHqU4H-BVJ78UZcsruOHZqcxSQufkXXViB4lOcw/edit" target="_blank"> Riya Journal</a>
+</td>
+
+</tr>
+<tr>
+<td>Brian</td>
+<td>
+<a href="https://github.com/bgt072105" target="_blank">bgt072105</a>
+</td>
+<td>
+<a href="" target="_blank">Technical Officer</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Abgt072105" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=bgt072105" target="_blank">Commits</a>
+
+<td>
+<a href="https://docs.google.com/document/d/1cL9JgXmOEQGrOota09JdzL3a_11Q3H8hX3EcLq9hEJw/edit" target="_blank"> Brian Journal</a>
+</td>
+</tr>
+
+<tr>
+<td>Alice</td>
+<td>
+<a href="https://github.com/tangalice" target="_blank">tangalice</a>
+</td>
+<td>
+<a href="" target="_blank">Designer</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Atangalice" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=tangalice" target="_blank">Commits</a>
+
+
+<td>
+<a href="https://docs.google.com/document/d/1AdbAwkMnSe1rwPUz6ionrjrmbTSIFqZO2bvsBqMLi4M/edit" target="_blank"> Alice Journal</a>
+</td>
+</tr>
+
+<tr>
+<td>Sreeja</td>
+<td>
+<a href="https://github.com/SreejaVad" target="_blank">SreejaVad</a>
+</td>
+<td>
+<a href="" target="_blank">Deployment Manager</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3ASreejaVad" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=SreejaVad" target="_blank">Commits</a>
+
+<td>
+<a href="https://docs.google.com/document/d/1Q7A0qwr5WiIOxq7wjKAjDTAUw2XEW1jE-ueGrLQJgkM/edit" target="_blank">Sreeja Journal</a>
+</td>
+</tr>
+</table>
+
+
+***
+## Project Purpose:
+Jungle Books fosters a love of reading by creating a welcoming environment to encourage users to discover new books, and log their reads and make reading a more enjoyable experience.
+***
+
+<a href="" target="_blank">Link to running website</a><br>
+
+####Below we have tables that provide a complete timeline of our work and commits over the past few weeks. They are divided into tables by sprints:
