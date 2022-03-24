@@ -1,37 +1,113 @@
-## Welcome to GitHub Pages
+{% include navigation.html %}
+## The coolest, codey-st, and catastrophically CURLIEST Git Hub page on planet Earth.
 
-You can use the [editor on GitHub](https://github.com/kamryns/curlycupboard3.0/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+- ## [Scrumboard](https://github.com/kamryns/curly-cupboard/projects/1)
+- ## [Review Ticket Week 1](https://github.com/kamryns/curly-cupboard/issues/17)
+- ## [Readme](https://github.com/kamryns/curly-cupboard)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<table id="readmeinformation">
 
-### Markdown
+<tr>
+<th>Tasks</th>
+<th>Contributors</th>
+<th>Github ID/ Profile</th>
+<th>Individual Repo</th>
+<th>Commits</th>
+<th>Pair Journal</th>
+</tr>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<tr>
+<td>Kamryn</td>
+<td>
+<a href="https://github.com/kamryns" target="_blank">kamryns</a>
+</td>
+<td>
+<a href= target="_blank">Github Admin</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Akamryns" target="_blank">Scrum Board</a>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=kamryns" target="_blank">Commits</a>
+</td>
+<td>
+<a href="https://docs.google.com/document/d/18Cm6Uxjgn6FWhXDQIEWuEGwQEmVX--wKHCiL4ZbjRC0/edit" target="_blank"> Kamryn Journal</a>
+</td>
+</tr>
 
-```markdown
-Syntax highlighted code block
+<tr>
+<td>Riya</td>
+<td>
+<a href="https://github.com/ranand2445" target="_blank">ranand2445</a>
+</td>
+<td>
+<a href="" target="_blank">Scrum Master</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Aranand2445" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=ranand2445" target="_blank">Commits</a>
+</td>
+<td>
+<a href="https://docs.google.com/document/d/1LvhXmHqU4H-BVJ78UZcsruOHZqcxSQufkXXViB4lOcw/edit" target="_blank"> Riya Journal</a>
+</td>
 
-# Header 1
-## Header 2
-### Header 3
+</tr>
+<tr>
+<td>Brian</td>
+<td>
+<a href="https://github.com/bgt072105" target="_blank">bgt072105</a>
+</td>
+<td>
+<a href="" target="_blank">Technical Officer</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Abgt072105" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=bgt072105" target="_blank">Commits</a>
 
-- Bulleted
-- List
+<td>
+<a href="https://docs.google.com/document/d/1cL9JgXmOEQGrOota09JdzL3a_11Q3H8hX3EcLq9hEJw/edit" target="_blank"> Brian Journal</a>
+</td>
+</tr>
 
-1. Numbered
-2. List
+<tr>
+<td>Alice</td>
+<td>
+<a href="https://github.com/tangalice" target="_blank">tangalice</a>
+</td>
+<td>
+<a href="" target="_blank">Designer</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Atangalice" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=tangalice" target="_blank">Commits</a>
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+<td>
+<a href="https://docs.google.com/document/d/1AdbAwkMnSe1rwPUz6ionrjrmbTSIFqZO2bvsBqMLi4M/edit" target="_blank"> Alice Journal</a>
+</td>
+</tr>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+<tr>
+<td>Sreeja</td>
+<td>
+<a href="https://github.com/SreejaVad" target="_blank">SreejaVad</a>
+</td>
+<td>
+<a href="" target="_blank">Deployment Manager</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3ASreejaVad" target="_blank">Scrum Board</a>
+</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/commits?author=SreejaVad" target="_blank">Commits</a>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kamryns/curlycupboard3.0/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<td>
+<a href="https://docs.google.com/document/d/1Q7A0qwr5WiIOxq7wjKAjDTAUw2XEW1jE-ueGrLQJgkM/edit" target="_blank">Sreeja Journal</a>
+</td>
+</tr>
+</table>
