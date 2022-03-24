@@ -121,4 +121,4 @@ Jungle Books fosters a love of reading by creating a welcoming environment to en
 
 <a href="" target="_blank">Link to running website</a><br>
 
-####Below we have tables that provide a complete timeline of our work and commits over the past few weeks. They are divided into tables by sprints:
+#### Below we have tables that provide a complete timeline of our work and commits over the past few weeks. They are divided into tables by sprints:
