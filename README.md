@@ -122,3 +122,21 @@ Jungle Books fosters a love of reading by creating a welcoming environment to en
 <a href="" target="_blank">Link to running website</a><br>
 
 #### Below we have tables that provide a complete timeline of our work and commits over the past few weeks. They are divided into tables by sprints:
+# Week 0:
+<table>
+<tr>
+<td>Week 0</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Review Ticket</a>
+</td>
+</table>
+
+# Week 1:
+<table>
+<tr>
+<td>Week 1</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/issues/17" target="_blank">Review Ticket</a>
+</td>
+</tr>
+</table>
