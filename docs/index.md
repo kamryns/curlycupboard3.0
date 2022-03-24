@@ -1,12 +1,9 @@
 {% include navigation.html %}
 ## The coolest, codey-st, and catastrophically CURLIEST Git Hub page on planet Earth.
 
-- ## [Scrumboard](https://github.com/kamryns/curly-cupboard/projects/1)
-- ## [Review Ticket Week 1](https://github.com/kamryns/curly-cupboard/issues/17)
-- ## [Readme](https://github.com/kamryns/curly-cupboard)
-
+- ## [Scrumboard](https://github.com/kamryns/curlycupboard3.0/projects/1)
+- ## [Readme](https://github.com/kamryns/curlycupboard3.0)
 <table id="readmeinformation">
-
 <tr>
 <th>Tasks</th>
 <th>Contributors</th>
@@ -25,9 +22,9 @@
 <a href= target="_blank">Github Admin</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Akamryns" target="_blank">Scrum Board</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3Akamryns" target="_blank">Scrum Board</a>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/commits?author=kamryns" target="_blank">Commits</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/commits?author=kamryns" target="_blank">Commits</a>
 </td>
 <td>
 <a href="https://docs.google.com/document/d/18Cm6Uxjgn6FWhXDQIEWuEGwQEmVX--wKHCiL4ZbjRC0/edit" target="_blank"> Kamryn Journal</a>
@@ -43,10 +40,10 @@
 <a href="" target="_blank">Scrum Master</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Aranand2445" target="_blank">Scrum Board</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3Aranand2445" target="_blank">Scrum Board</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/commits?author=ranand2445" target="_blank">Commits</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/commits?author=ranand2445" target="_blank">Commits</a>
 </td>
 <td>
 <a href="https://docs.google.com/document/d/1LvhXmHqU4H-BVJ78UZcsruOHZqcxSQufkXXViB4lOcw/edit" target="_blank"> Riya Journal</a>
@@ -62,10 +59,10 @@
 <a href="" target="_blank">Technical Officer</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Abgt072105" target="_blank">Scrum Board</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3Abgt072105" target="_blank">Scrum Board</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/commits?author=bgt072105" target="_blank">Commits</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/commits?author=bgt072105" target="_blank">Commits</a>
 
 <td>
 <a href="https://docs.google.com/document/d/1cL9JgXmOEQGrOota09JdzL3a_11Q3H8hX3EcLq9hEJw/edit" target="_blank"> Brian Journal</a>
@@ -81,10 +78,10 @@
 <a href="" target="_blank">Designer</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3Atangalice" target="_blank">Scrum Board</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3Atangalice" target="_blank">Scrum Board</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/commits?author=tangalice" target="_blank">Commits</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/commits?author=tangalice" target="_blank">Commits</a>
 
 
 <td>
@@ -101,13 +98,30 @@
 <a href="" target="_blank">Deployment Manager</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/projects/1?card_filter_query=assignee%3ASreejaVad" target="_blank">Scrum Board</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3ASreejaVad" target="_blank">Scrum Board</a>
 </td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/commits?author=SreejaVad" target="_blank">Commits</a>
+<a href="https://github.com/kamryns/curlycupboard3.0/commits?author=SreejaVad" target="_blank">Commits</a>
 
 <td>
 <a href="https://docs.google.com/document/d/1Q7A0qwr5WiIOxq7wjKAjDTAUw2XEW1jE-ueGrLQJgkM/edit" target="_blank">Sreeja Journal</a>
+</td>
+</tr>
+</table>
+
+# Week 0:
+<table>
+<tr>
+<td>Week 0</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Week 0</a>
+</td>
+# Week 1: 
+<table>
+<tr>
+<td>Week 1</td>
+<td>
+<a href="https://github.com/kamryns/curly-cupboard/issues/17" target="_blank">Week 0</a>
 </td>
 </tr>
 </table>
