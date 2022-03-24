@@ -1,5 +1,6 @@
 {% include navigation.html %}
 ### contact: sdafoe@powayusd.com
+
 ### PII Concerns: We talked to Mrs. Dafoe and she said that one concern she would have with a forum, is that students can upload innappropriate content. She wants us to make sure students can't upload things like that. One way we have to combat that is that the only upload/post option we would have available is on local storage, so it wouldn't be accessible by other studnets.
 
 <table>
@@ -39,21 +40,22 @@ Feedback/Requirement:
 - different genre match feature  <br>
     - ex: non-fiction and fiction, how do they relate? <br>
 
-
-
-
 </td>
 </tr>
 
-  <tr>
+<tr>
 <td>Week 2</td>
-
 <td>  
 Feedback/Requirement:
 <br>
 
-- showed her our visuals <br>
-
+- Showed her our visuals  <br>
+- Agreed on a Creative Commons Liscence --> if other csp students want to make reading websites from this that's okay --> just to have to attribute our work  <br>
+- Suggested that pages are like a choose your own adventure (once you choose a side, either reading or non reading, you go to pages that are not displayed on nav bar) <br>
+- More info on curriculum books --> said students can lose interest  <br>
+- Make it more interactive with the student curriculum <br>
+- Presented the Mr. M's feedback (have some teacher admin where they can add books) --> she really liked it <br>
+- Thought she could use the admin feature to add popular books student could read for reading zone/book talks she can update it<br>
 </td>
 </tr>
 
