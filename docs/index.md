@@ -116,7 +116,9 @@
 <td>
 <a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Week 0</a>
 </td>
-# Week 1: 
+</table>
+
+# Week 1:
 <table>
 <tr>
 <td>Week 1</td>
