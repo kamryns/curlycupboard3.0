@@ -114,7 +114,7 @@
 <tr>
 <td>Week 0</td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Week 0</a>
+<a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Review Ticket</a>
 </td>
 </table>
 
@@ -123,7 +123,7 @@
 <tr>
 <td>Week 1</td>
 <td>
-<a href="https://github.com/kamryns/curly-cupboard/issues/17" target="_blank">Week 0</a>
+<a href="https://github.com/kamryns/curly-cupboard/issues/17" target="_blank">Review Ticket</a>
 </td>
 </tr>
 </table>
