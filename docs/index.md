@@ -4,37 +4,27 @@
 - ## [Scrumboard](https://github.com/kamryns/curlycupboard3.0/projects/1)
 - ## [Readme](https://github.com/kamryns/curlycupboard3.0)
 
-# Week 0:
+# Review Tickets:
 <table>
 <tr>
 <td>Week 0</td>
 <td>
 <a href="https://github.com/kamryns/curly-cupboard/issues/11" target="_blank">Review Ticket</a>
 </td>
-</table>
-
-# Week 1:
-<table>
 <tr>
 <td>Week 1</td>
 <td>
 <a href="https://github.com/kamryns/curly-cupboard/issues/17" target="_blank">Review Ticket</a>
 </td>
-</tr>
-</table>
-
-# Week 2:
-<table>
 <tr>
 <td>Week 2</td>
 <td>
 <a href="https://github.com/kamryns/curlycupboard3.0/issues/24" target="_blank">Review Ticket</a>
 </td>
-</tr>
 </table>
 
 
-
+# General Info:
 <table id="readmeinformation">
 <tr>
 <th>Tasks</th>
