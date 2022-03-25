@@ -127,3 +127,13 @@
 </td>
 </tr>
 </table>
+
+# Week 2:
+<table>
+<tr>
+<td>Week 2</td>
+<td>
+<a href="https://github.com/kamryns/curlycupboard3.0/issues/24" target="_blank">Review Ticket</a>
+</td>
+</tr>
+</table>
