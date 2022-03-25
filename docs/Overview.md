@@ -47,8 +47,6 @@
 ![IMG_6435](https://user-images.githubusercontent.com/89274189/157814361-8b272737-1a95-40ac-a13b-bf98d3ec79b5.jpeg)
 ![Screen Shot 2022-03-10 at 11 11 35 PM](https://user-images.githubusercontent.com/89274189/157926680-ccfc898a-1949-4587-a0c3-9634e7483e46.jpeg)
 ![Screen Shot 2022-03-10 at 11 11 46 PM](https://user-images.githubusercontent.com/89274189/157926703-96f5f9e7-dfef-48d1-8b6d-5c91f0a8b732.jpeg)
-![Screen Shot 2022-03-10 at 11 11 56 PM](https://user-images.githubusercontent.com/89274189/15<img width="831" alt="Screen Shot 2022-03-23 at 5 08 16 PM" src="https://user-images.githubusercontent.com/89223922/<img width="865" alt="Screen Shot 2022-03-23 at 5 02 22 PM" src="https://user-images.githubusercontent.com/89223922/160046547-dad02061-b608-4c41-92ce-cde7605052c9.png">
-160046535-0c7100bc-a44d-4e59-ba77-9f79471dbe6c.png">
-7926732-f67617e2-3991-4300-8fc3-c0379f4ef98f.jpeg)<img width="915" alt="Screen Shot 2022-03-23 at 5 07 39 PM" src="https://user-images.githubusercontent.com/89223922/160046541-56031777-0270-4a88-9c46-3a574de5a2f1.png">
+![Screen Shot 2022-03-10 at 11 11 56 PM](https://user-images.githubusercontent.com/89274189/157926732-f67617e2-3991-4300-8fc3-c0379f4ef98f.jpeg)
 
 
