@@ -3,6 +3,7 @@
 
 - ## [Scrumboard](https://github.com/kamryns/curlycupboard3.0/projects/1)
 - ## [Readme](https://github.com/kamryns/curlycupboard3.0)
+
 <table id="readmeinformation">
 <tr>
 <th>Tasks</th>
@@ -19,7 +20,7 @@
 <a href="https://github.com/kamryns" target="_blank">kamryns</a>
 </td>
 <td>
-<a href= target="_blank">Github Admin</a>
+<a href="" target="_blank">Github Admin</a>
 </td>
 <td>
 <a href="https://github.com/kamryns/curlycupboard3.0/projects/1?card_filter_query=assignee%3Akamryns" target="_blank">Scrum Board</a>
@@ -106,7 +107,6 @@
 <td>
 <a href="https://docs.google.com/document/d/1Q7A0qwr5WiIOxq7wjKAjDTAUw2XEW1jE-ueGrLQJgkM/edit" target="_blank">Sreeja Journal</a>
 </td>
-</tr>
 </table>
 
 # Week 0:
