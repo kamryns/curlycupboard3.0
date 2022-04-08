@@ -1,0 +1,78 @@
+<!-- Custom file for standardizing Project Data
+This HTML is set up as a Jinja2 layout, coders use layouts for:
+ ... standardization of style
+ ... setting expectations for data
+ ... code reuse
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+{%  set basename = "Books" %}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        html, body{
+            margin: 0;
+            height: 100%;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position:100% 100%;
+            min-height:100%;
+            min-width:100%;
+            background-size:cover;
+            margin: 0;
+            height: 100%;
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
+            background-color: white;
+            font-family: "Trebuchet MS";
+
+        }
+
+        h1{
+            font-size: 5em;
+            font-family:'Monotype Corsiva';
+            color:ghostwhite;
+        }
+        .button1 {border-radius: 8px;}
+        .button2 {border-radius: 8px;}
+        .button3 {border-radius: 8px;}
+        .button4 {border-radius: 8px;}
+
+
+    </style>
+    {% block meta %}
+    {% endblock %}
+
+    <title>{{ basename }} | {{ project }} </title>
+
+</head>
+
+<body>
+
+{% include "layouts/navbar.html" %}
+
+{% block body %}
+
+
+    <div class="product" style="margin-top: 2%;" >
+        <div class="row" style="padding: 0% 10% 5%;">
+
+            <div class="col-8" >
+
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+
+{% block background %}
+
+{% endblock %}
