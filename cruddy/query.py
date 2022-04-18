@@ -62,18 +62,16 @@ def user_by_email(email):
     """finds User in table matching email """
     return Users.query.filter_by(email=email).first()
 
-def user_by_phone(phone):
-    """finds User in table matching phone number """
-    return Users.query.filter_by(phone=phone).first()
+
 
 
 # check credentials in database
-def is_user(email, password, phone):
+def is_user(email, password,):
     # query email and return user record
     user_record = user_by_email(email)
-    user_record2 = user_by_phone(phone)
+
     # if user record found, check if password is correct
-    return user_record and user_record2 and Users.is_password_match(user_record, password)
+    return user_record and Users.is_password_match(user_record, password)
 
 
 # login user based off of email and password
@@ -89,6 +87,7 @@ def login(email, password):
         return False
 
 
+
 # this function is needed for Flask-Login to work.
 @login_manager.user_loader
 def user_loader(user_id):
@@ -99,15 +98,16 @@ def user_loader(user_id):
 
 
 # Authorise new user requires user_name, email, password
+# Authorise new user requires user_name, email, password
 def authorize(name, email, password, phone):
-    if is_user(email, password, phone):
+    if is_user(email, password):
         return False
     else:
         auth_user = Users(
             name=name,
             email=email,
             password=password,
-            phone=phone,  # this should be added to authorize.html
+            phone=phone  # this should be added to authorize.html
         )
         # encrypt their password and add it to the auth_user object
         auth_user.create()
