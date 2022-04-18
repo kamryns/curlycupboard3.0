@@ -12,6 +12,9 @@
 
 <!-- CONTENT (in <body>), content for this page -->
 {% block body %}
+    {% if current_user.is_authenticated %}
+        <p style ='...'> {{ current_user.name }} is logged in</p>
+    {% endif %}
     <a href={{url_for('crud.crud_logout')}}>Logout</a>
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom border-primary text-dark">
