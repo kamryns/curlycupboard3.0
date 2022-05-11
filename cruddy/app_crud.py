@@ -32,7 +32,10 @@ def unauthorized():
     """Redirect unauthorized users to Login page."""
     return redirect(url_for('crud.crud_login'))
 
-
+@app_crud.route("/draw/")
+@login_required
+def draw():
+    return render_template("draw.html")
 
 # if login url, show phones table only
 @app_crud.route('/login/', methods=["GET", "POST"])
