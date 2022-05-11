@@ -1,17 +1,25 @@
-from flask import render_template
+from flask import Blueprint, render_template
 from __init__ import app
-
+from flask_login import login_required
 from cruddy.app_crud import app_crud
 
 app.register_blueprint(app_crud)
-
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+@app.route("/tbr/")
+def tbr():
+    return render_template("tbr.html")
 
+@app.route("/draw/")
+def draw():
+    return render_template("draw.html")
 
+@app.route("/notepad/")
+def notepad():
+    return render_template("notepad.html")
 
 if __name__ == "__main__":
     app.run(
