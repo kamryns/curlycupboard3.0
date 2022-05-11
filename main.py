@@ -9,6 +9,10 @@ app.register_blueprint(app_crud)
 def index():
     return render_template("index.html")
 
+@app.route("/notepad/")
+def notepad():
+    return render_template("notepad.html")
+
 @app.route("/tbr/")
 def tbr():
     return render_template("tbr.html")
@@ -16,10 +20,6 @@ def tbr():
 @app.route("/draw/")
 def draw():
     return render_template("draw.html")
-
-@app.route("/notepad/")
-def notepad():
-    return render_template("notepad.html")
 
 if __name__ == "__main__":
     app.run(
