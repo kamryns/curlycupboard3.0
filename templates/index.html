@@ -12,7 +12,11 @@
     <br>
     <img src="/static/assets/logo.png" style="height: 206px; width: 668px;" id="logo"/>
     <br>
-    <p style id="sign" >Sign Up       |       Sign In</p>
+    <br>
+    <a href={{ url_for('tools.todo') }}>
+        <p style id="sign" >Sign Up           |           Sign In</p>
+    </a>
+
     <style>
         body{
             color: #ffffff;
@@ -24,7 +28,7 @@
         }
         #sign{
             position: relative;
-            left: 27%;
+            left: 45%;
             vertical-align: middle;
         }
     </style>
