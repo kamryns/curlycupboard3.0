@@ -21,9 +21,19 @@ def tbr():
 def draw():
     return render_template("draw.html")
 
+@app.route("/scarlet/")
+def scarlet():
+    return render_template("scarletquiz.html")
+
+@app.route("/romeo/")
+def romeo():
+    return render_template("romeo.html")
+
+
 if __name__ == "__main__":
+    # runs the application on the repl development server
     app.run(
-        host='0.0.0.0',
+        host='127.0.0.1',
         debug=True,
         port=8080
     )
