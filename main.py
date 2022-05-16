@@ -29,6 +29,10 @@ def scarlet():
 def romeo():
     return render_template("romeo.html")
 
+@app.route("/explorechoice/")
+def echoice():
+    return render_template("explorechoice.html")
+
 
 if __name__ == "__main__":
     # runs the application on the repl development server
