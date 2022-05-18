@@ -2,12 +2,15 @@
 {% block body %}
 <!DOCTYPE html>
 <html lang="en">
+<body style="background-image: url('/static/assets/tbrBG.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 <head>
   <meta charset="UTF-8">
   <title>Reading Checklist</title>
 </head>
 
 <body>
+    <body style="background-image: url('/static/assets/tbr.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
 <div class="container">
   <input type="text" class="addText" placeholder="Title">
   <button class="addBtn" onclick="addElement()">
@@ -53,6 +56,7 @@
               i +
               ")'></div></center>";
   }
+  // trying to push again now
 
   function del(index) {
     elements.splice(index, 1);
@@ -80,7 +84,6 @@
 
 <style>
   body{
-    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2021%2F09%2F21%2Figuazu-falls-argentina-brazil-MOSTBEAUTIFUL0921.jpg");
     color: #ffffff;
   }
   .container{
