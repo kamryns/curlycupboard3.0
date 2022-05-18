@@ -41,7 +41,7 @@ def dictionary():
     try:
         keyword = request.form['keyword']
     except:
-        keyword = "study"
+        keyword = "reading"
     url = "https://twinword-word-graph-dictionary.p.rapidapi.com/definition/"
     querystring = {"entry":keyword}
     headers = {
