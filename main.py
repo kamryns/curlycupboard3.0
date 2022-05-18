@@ -2,6 +2,9 @@ from flask import Blueprint, render_template
 from __init__ import app
 from flask_login import login_required
 from cruddy.app_crud import app_crud
+from flask import render_template, request
+import requests
+import json
 
 app.register_blueprint(app_crud)
 
@@ -32,6 +35,7 @@ def romeo():
 @app.route("/explorechoice/")
 def echoice():
     return render_template("explorechoice.html")
+
 
 
 if __name__ == "__main__":
