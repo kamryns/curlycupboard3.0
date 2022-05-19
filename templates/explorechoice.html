@@ -9,8 +9,14 @@
 
     <body style="background-image: url('/static/assets/explore2.jpeg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 
-    <button class="button button1" style id = "START">START exploring</button>
-    <button class="button button2" style id = "CONTINUE">CONTINUE exploring</button>
+
+    <a href={{ url_for('starte') }}>
+        <button class="button button1" style id = "START">START exploring</button>
+    </a>
+
+    <a href={{ url_for('edeeper') }}>
+        <button class="button button2" style id = "CONTINUE">CONTINUE exploring</button>
+    </a>
 
     </body>
 

@@ -40,6 +40,14 @@ def romeo():
 def echoice():
     return render_template("explorechoice.html")
 
+@app.route("/exploredeeper/")
+def edeeper():
+    return render_template("exploredeeper.html")
+
+@app.route("/startexploring/")
+def starte():
+    return render_template("startexploring.html")
+
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():
     try:
