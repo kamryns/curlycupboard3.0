@@ -24,6 +24,10 @@ def tbr():
 def draw():
     return render_template("draw.html")
 
+@app.route("/songs/")
+def songs():
+    return render_template("songs.html")
+
 @app.route("/scarlet/")
 def scarlet():
     return render_template("scarletquiz.html")
