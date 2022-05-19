@@ -319,6 +319,32 @@
 <br>
 <br>
 
+    <p align="center">
+        <img
+                width="270"
+                height=""
+                src="../static/assets/feedback.png">
+    </p>
+
+<! figure out how the form-data will be sent to a page (server called "action_page.php").>
+<! form action="/action_page.php">
+    <form style="border-radius:12px; text-align:Middle; margin: 25px; color:#ffe8d6; font-size:20px; font-family:new century schoolbook">
+
+        <label for="fname">Nickname:</label>
+    <div>
+        <input type="text" id="fname" name="fname" style="width: 300px; border-radius:24px;"><br><br>
+    </div>
+    <div>
+        <label for="lname">Know any songs we missed? Let us Know!</label>
+    </div>
+    <div>
+        <input type="text" id="lname" name="lname" style="width:700px; hight:700px; border-radius:24px;"><br><br>
+    </div>
+        <input type="submit" value="Submit" onsubmit="alert('Thank you for your feedback.');">
+</form>
+<br>
+<br>
+
 <style>
     html, body{
     margin: 0;
@@ -326,6 +352,8 @@
     background-image:url('https://cdna.artstation.com/p/assets/images/images/002/912/766/large/dao-dao-15-day.jpg?1467191246');
     }
 </style>
+
+
 
 {% endblock %}
 {% block background %}
