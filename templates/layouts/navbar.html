@@ -18,7 +18,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <a class="navbar-brand" href="{{ url_for('index') }}">Jungle Books</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
+    </button>1
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
@@ -35,10 +35,9 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <a style="color: black"class="nav-link" href={{ url_for('tbr') }}>To Be Read</a>
                     <a style="color: black"class="nav-link" href={{ url_for('notepad') }}>Planner</a>
                     <a style="color: black"class="nav-link" href={{ url_for('dictionary') }}>Dictionary</a>
-
+                    <a style="color: black"class="nav-link" href={{ url_for('songs') }}>Songs</a>
                 </div>
             </li>
-
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarLabs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
