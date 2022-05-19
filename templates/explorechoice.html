@@ -9,12 +9,8 @@
 
     <body style="background-image: url('/static/assets/explore2.jpeg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 
-    <h2>Choose your adventure</h2>
-
-    <p>Change the font size of a button with the font-size property:</p>
-
-    <button class="button button1">START exploring</button>
-    <button class="button button2">CONTINUE exploring</button>
+    <button class="button button1" style id = "START">START exploring</button>
+    <button class="button button2" style id = "CONTINUE">CONTINUE exploring</button>
 
     </body>
 
@@ -38,6 +34,18 @@
 
         .button1 {font-size: 24px;}
         .button2 {font-size: 24px;}
+
+        #START{
+            position: absolute;
+            left: 250px;
+            top: 340px;
+        }
+
+        #CONTINUE{
+            position: absolute;
+            left: 960px;
+            top: 340px;
+        }
     </style>
 {% endblock %}
 
