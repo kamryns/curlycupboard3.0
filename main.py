@@ -8,6 +8,8 @@ import json
 
 app.register_blueprint(app_crud)
 
+thisList = []
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -32,6 +34,11 @@ def songs():
 def scarlet():
     return render_template("scarletquiz.html")
 
+
+@app.route("/summer/")
+def summer():
+    return render_template("summer.html")
+
 @app.route("/romeo/")
 def romeo():
     return render_template("romeo.html")
@@ -39,6 +46,17 @@ def romeo():
 @app.route("/explorechoice/")
 def echoice():
     return render_template("explorechoice.html")
+
+@app.route("/exploredeeper/")
+def edeeper():
+    return render_template("exploredeeper.html")
+
+@app.route("/startexploring/")
+def starte():
+    return render_template("startexploring.html")
+@app.route("/crossword/")
+def crossword():
+    return render_template("crossword.html")
 
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():
@@ -59,6 +77,28 @@ def dictionary():
     else:
         return render_template("dictionary.html", word=keyword)
     # print(response.text)
+
+
+@app.route('/beginnerforum/')
+def beginnerforum():
+    return render_template("beginnerforum.html")
+
+
+@app.route('/post', methods=['GET', 'POST'])
+def post():
+    if request.form:
+        thought = request.form.get("thought")
+        thisList.append(thought)
+        if len(thought) != 0:
+            return render_template("beginnerforum.html", nickname=thisList)
+    return render_template("beginnerforum.html")
+
+
+@app.route('/delete', methods=['GET', 'POST'])
+def delete():
+    if len(thisList) > 0:
+        thisList.pop(len(thisList) - 1)
+    return render_template("beginnerforum.html", nickname=thisList)
 
 if __name__ == "__main__":
     # runs the application on the repl development server
