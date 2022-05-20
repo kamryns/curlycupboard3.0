@@ -26,6 +26,10 @@ def tbr():
 def draw():
     return render_template("draw.html")
 
+@app.route("/songs/")
+def songs():
+    return render_template("songs.html")
+
 @app.route("/scarlet/")
 def scarlet():
     return render_template("scarletquiz.html")
@@ -37,6 +41,14 @@ def romeo():
 @app.route("/explorechoice/")
 def echoice():
     return render_template("explorechoice.html")
+
+@app.route("/exploredeeper/")
+def edeeper():
+    return render_template("exploredeeper.html")
+
+@app.route("/startexploring/")
+def starte():
+    return render_template("startexploring.html")
 
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():
