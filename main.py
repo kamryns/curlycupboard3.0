@@ -57,6 +57,9 @@ def starte():
 @app.route("/crossword/")
 def crossword():
     return render_template("crossword.html")
+@app.route("/exploredeeper/")
+def exploredeeper():
+    return render_template("exploredeeper.html")
 
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():

@@ -1,5 +1,59 @@
-{% extends "layouts/base.html" %}
+
+
 {% block body %}
-  <!DOCTYPE html>
-  <p>explore deeper</p>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Post your thoughts on your last book~</title>
+        <style>
+            body {
+                background-image: url(/static/assets/leaves.jpg);
+            }
+            h2 {
+                color: blue;
+                font-family: Copperplate;
+                font-size: 300%;
+                text-align: center;
+
+            }
+            h4 {
+                color: #000000;
+                font-family:Copperplate;
+                font-size: 160%;
+                text-align: center;
+                border: 3px solid #000000;
+
+            textarea.center {
+                margin: auto;
+                width: 50%;
+                border: 3px solid green;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+    <h2>What did you think about your last book?</h2>
+    <h4> Type it here!</h4>
+    <textarea id="myTextarea" rows="10" cols="80"></textarea>
+    <p></p>
+    <button onclick="mySave()">Save</button>
+    <button onclick="myLoad()">Load</button>
+    </body>
+    </html>
+
+    <script>
+        function mySave() {
+            var myContent = document.getElementById("myTextarea").value;
+            localStorage.setItem("myContent", myContent);
+        }
+        function myLoad() {
+            var myContent = localStorage.getItem("myContent");
+            document.getElementById("myTextarea").value = myContent;
+        }
+    </script>
 {% endblock %}
