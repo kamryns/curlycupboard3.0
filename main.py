@@ -61,6 +61,10 @@ def crossword():
 def exploredeeper():
     return render_template("exploredeeper.html")
 
+@app.route("/timer/")
+def timer():
+    return render_template("timer.html")
+
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():
     try:
