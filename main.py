@@ -34,6 +34,11 @@ def songs():
 def scarlet():
     return render_template("scarletquiz.html")
 
+
+@app.route("/summer/")
+def summer():
+    return render_template("summer.html")
+
 @app.route("/romeo/")
 def romeo():
     return render_template("romeo.html")
@@ -49,6 +54,9 @@ def edeeper():
 @app.route("/startexploring/")
 def starte():
     return render_template("startexploring.html")
+@app.route("/crossword/")
+def crossword():
+    return render_template("crossword.html")
 
 @app.route('/dictionary/', methods=['GET','POST'])
 def dictionary():
