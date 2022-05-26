@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block body %}
 <body>
-<img src="/static/assets/fcards.png" style="height: 110px; width: auto;" id="stud" />
+<img src="/static/assets/fcards.png" style="height: 110px; width: auto;" id="fcards" />
 
 <div id="front1"><p id="front"> </div>
 <p id="back"> </p>
@@ -20,12 +20,12 @@
 <br>
 <div id="formContainer">
     <form id="cardForm">
-        <input id="newTerm" type="text" placeholder="Term" onKeyDown="if(event.keyCode==13) document.getElementById('newDef').focus()">
-        <input id="newDef" type="text" placeholder="Definition" onKeyDown="if(event.keyCode==13) cardAdd()">
+        <input id="newTerm" type="text" placeholder="  Term" onKeyDown="if(event.keyCode==13) document.getElementById('newDef').focus()">
+        <input id="newDef" type="text" placeholder="  Definition" onKeyDown="if(event.keyCode==13) cardAdd()">
         <br>
-        <input id="submit" type="button" value="Add it to the deck" onClick="cardAdd()">
+        <input id="submit" type="button" value="Add To Deck" onClick="cardAdd()">
         <br>
-        <input id="clearDeck" type="button" value="Clear the deck" onClick="emptyDeck()">
+        <input id="clearDeck" type="button" value="Clear Deck" onClick="emptyDeck()">
     </form>
     <br>
 </div>
@@ -55,10 +55,10 @@
         overflow:screen;
     }
 
-    #stud {
+    #fcards {
         position:absolute;
         top:75px;
-        left: 550px;
+        left: 540px;
 
     }
     #front1 {
@@ -66,10 +66,10 @@
         height: 400px;
         background-color: #F5F5F5;
         border-radius: 40px;
-        box-shadow: 7px 7px #34549c;
+        box-shadow: 7px 7px #194d3a;
         position: absolute;
         top:200px;
-        left: 450px;
+        left: 420px;
 
     }
 
