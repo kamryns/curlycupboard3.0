@@ -30,6 +30,10 @@ def draw():
 def songs():
     return render_template("songs.html")
 
+@app.route("/calender/")
+def calender():
+    return render_template("calender.html")
+
 @app.route("/scarlet/")
 def scarlet():
     return render_template("scarletquiz.html")
