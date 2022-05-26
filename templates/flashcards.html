@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block body %}
 <body>
+<img src="/static/assets/fcards.png" style="height: 110px; width: auto;" id="stud" />
 
 <div id="front1"><p id="front"> </div>
 <p id="back"> </p>
@@ -8,11 +9,11 @@
 {#back of flashcard#}
 </div><br>
 <div id ="activeCardButtons">
-    <img src="/static/assets/leftarrow.png" style="height: 100px; width: auto;" id="prev" onclick="prevCard()"/>
+    <img src="/static/assets/left_arrow.png" style="height: 90px; width: auto;" id="prev" onclick="prevCard()"/>
 
     <button id="flip" type="button" value="Flip" onclick="flash()">
         Flip</button>
-    <img src="/static/assets/rightarrow.png" style="height: 90px; width: auto;" id="next" onclick="nextCard()"/>
+    <img src="/static/assets/right_arrow.png" style="height: 90px; width: auto;" id="next" onclick="nextCard()"/>
 </div>
 <br>
 <br>
@@ -32,7 +33,7 @@
 
 <style>
     body{
-        background-color: #4670D1;
+        background-color: #36886bff;
     }
 
     html{
@@ -57,7 +58,7 @@
     #stud {
         position:absolute;
         top:75px;
-        left: 640px;
+        left: 550px;
 
     }
     #front1 {
