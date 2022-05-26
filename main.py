@@ -30,6 +30,10 @@ def draw():
 def songs():
     return render_template("songs.html")
 
+@app.route("/calender/")
+def calender():
+    return render_template("calender.html")
+
 @app.route("/scarlet/")
 def scarlet():
     return render_template("scarletquiz.html")
@@ -54,12 +58,10 @@ def edeeper():
 @app.route("/startexploring/")
 def starte():
     return render_template("startexploring.html")
+
 @app.route("/crossword/")
 def crossword():
     return render_template("crossword.html")
-@app.route("/exploredeeper/")
-def exploredeeper():
-    return render_template("exploredeeper.html")
 
 @app.route("/timer/")
 def timer():
@@ -85,10 +87,13 @@ def dictionary():
         return render_template("dictionary.html", word=keyword)
     # print(response.text)
 
+@app.route('/flashcards/')
+def flashcards():
+    return render_template("flashcards.html")
 
 @app.route('/beginnerforum/')
 def beginnerforum():
-    return render_template("beginnerforum.html")
+    return render_template("startexploring.html")
 
 
 @app.route('/post', methods=['GET', 'POST'])
@@ -97,15 +102,15 @@ def post():
         thought = request.form.get("thought")
         thisList.append(thought)
         if len(thought) != 0:
-            return render_template("beginnerforum.html", nickname=thisList)
-    return render_template("beginnerforum.html")
+            return render_template("startexploring.html", nickname=thisList)
+    return render_template("startexploring.html")
 
 
 @app.route('/delete', methods=['GET', 'POST'])
 def delete():
     if len(thisList) > 0:
         thisList.pop(len(thisList) - 1)
-    return render_template("beginnerforum.html", nickname=thisList)
+    return render_template("startexploring.html", nickname=thisList)
 
 if __name__ == "__main__":
     # runs the application on the repl development server

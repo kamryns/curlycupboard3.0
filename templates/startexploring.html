@@ -1,52 +1,34 @@
 {% extends "layouts/base.html" %}
 {% block body %}
-    <!DOCTYPE html>
-    <head>
 
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="post">
 
-    <body>
+    </div>
+    {%for i in nickname%}
+        <p>{{i}}</p>
+    {%endfor%}
+    <form action="/post" id="publish" method="POST" >
+        <label for="thought">Post Your Thoughts</label>
+        <input name="thought" id="thought">
+        <input type="submit" value="Go!">
+    </form>
 
-    <body style="background-image: url('/static/assets/flower.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <form action="/delete" id="remove" method="POST" >
+        <label>Delete Last Post</label>
+        <input type="submit" value="Go!">
+    </form>
+</body>
+</html>
 
 
 
-
-    </body>
-
-    <script>
-
-    </script>
-
-
-    <style>
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .button1 {font-size: 24px;}
-        .button2 {font-size: 24px;}
-
-        #START{
-            position: absolute;
-            left: 250px;
-            top: 340px;
-        }
-
-        #CONTINUE{
-            position: absolute;
-            left: 960px;
-            top: 340px;
-        }
-    </style>
 {% endblock %}
-
-
+{% block background %}
+{% endblock %}
