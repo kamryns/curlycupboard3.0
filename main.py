@@ -112,6 +112,10 @@ def delete():
         thisList.pop(len(thisList) - 1)
     return render_template("startexploring.html", nickname=thisList)
 
+@app.route('/bookwheel/')
+def bookwheel():
+    return render_template("bookwheel.html")
+
 if __name__ == "__main__":
     # runs the application on the repl development server
     app.run(
