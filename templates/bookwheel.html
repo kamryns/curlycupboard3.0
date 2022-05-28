@@ -3,12 +3,12 @@
 {% block body %}
 <style type="text/css">
     html, body {
-        background-image:url('https://wallpaperaccess.com/full/328472.jpg');
+        background-image:url('/static/assets/wheelBG.jpg');
 
     }
     text{
         font-family:Helvetica, Arial, sans-serif;
-        font-size:11px;
+        font-size:20px;
         pointer-events:none;
     }
     #chart{
@@ -23,23 +23,26 @@
         width:400px;
         height:500px;
         top:0;
-        left:520px;
+        left:550px;
     }
     #question h1{
-        font-size: 50px;
-        font-weight: bold;
+        font-size: 20px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         position: absolute;
         padding: 0;
         margin: 0;
-        top:50%;
+        top:40%;
         -webkit-transform:translate(0,-50%);
         transform:translate(0,-50%);
+    }
+    #genre{
+        font-size: 40px;
+        font-weight: bold;
     }
 </style>
 
 
-<h1>Spin for book recommendations based on genre!</h1>
+<h1 id="genre">Spin for book recommendations based on genre!</h1>
 
 
 
