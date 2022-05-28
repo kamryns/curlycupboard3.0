@@ -22,7 +22,8 @@ app.config['SECRET_KEY'] = 'SECRET_KEY'
 
 
 class books(db.Model):
-    # define the attend schema
+
+
     userID = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(255), unique=False, nullable=False)
     genre = db.Column(db.String(255), unique=False, nullable=False)
@@ -44,8 +45,8 @@ class books(db.Model):
     # returns self or None on error
     def create1(self):
         try:
-            # creates a person object from attend(db.Model) class, passes initializers
-            db.session.add(self)  # add prepares to persist person object to attend table
+
+            db.session.add(self)
             db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
             return self
         except IntegrityError:
@@ -63,7 +64,7 @@ class books(db.Model):
             "dop": self.dop,
         }
 
-    # CRUD update: updates attend name, res, food
+
     # returns self
     def update1(self, title, author, genre, dop):
         """only updates values with length"""
