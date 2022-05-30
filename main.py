@@ -1,16 +1,16 @@
-from flask import Blueprint, render_template
 from __init__ import app
-from flask_login import login_required
 from cruddy.app_crud import app_crud
 from flask import render_template, request
 import requests
 import json
-from note.app_notes import app_notes
+from notey.app_notes import app_notes
 from contenty.app_content import app_content
 
 app.register_blueprint(app_content)
 app.register_blueprint(app_crud)
 app.register_blueprint(app_notes)
+
+
 thisList = []
 
 @app.route("/")
@@ -28,7 +28,6 @@ def tbr():
 @app.route("/draw/")
 def draw():
     return render_template("draw.html")
-
 
 @app.route("/songs/")
 def songs():

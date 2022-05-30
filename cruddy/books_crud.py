@@ -4,14 +4,14 @@
 """control dependencies to support CRUD app routes and APIs"""
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
 
-from crud.sql import *
+from cruddy.sql import *
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
-app_crud = Blueprint('crud', __name__,
-                     url_prefix='/crud',
-                     template_folder='templates/crud/',
-                     static_folder='static',
-                     static_url_path='static')
+app_books = Blueprint('boks', __name__,
+                       url_prefix='/books',
+                       template_folder='templates/books/',
+                       static_folder='static',
+                       static_url_path='assets')
 
 """ Application control for CRUD is main focus of this File, key features:
     1.) User table queries
@@ -20,29 +20,29 @@ app_crud = Blueprint('crud', __name__,
 
 
 # Default URL
-@app_crud.route('/')
+@books_crud.route('/')
 def crud():
     """obtains all Users from table and loads Admin Form"""
     return render_template("crud.html", table=users_all())
 
 
 # CRUD create/add
-@app_crud.route('/create/', methods=["POST"])
+@books_crud.route('/create/', methods=["POST"])
 def create():
     """gets data from form and add it to Users table"""
     if request.form:
         po = books(
             request.form.get("title"),
             request.form.get("author"),
-            request.form.get("password"),
-            request.form.get("phone")
+            request.form.get("genre"),
+            request.form.get("dop")
         )
         po.create()
     return redirect(url_for('crud.crud'))
 
 
 # CRUD read
-@app_crud.route('/read/', methods=["POST"])
+@books_crud.route('/read/', methods=["POST"])
 def read():
     """gets userid from form and obtains corresponding data from Users table"""
     table = []
@@ -55,7 +55,7 @@ def read():
 
 
 # CRUD update
-@app_crud.route('/update/', methods=["POST"])
+@books_crud.route('/update/', methods=["POST"])
 def update():
     """gets userid and name from form and filters and then data in  Users table"""
     if request.form:
@@ -68,7 +68,7 @@ def update():
 
 
 # CRUD delete
-@app_crud.route('/delete/', methods=["POST"])
+@books_crud.route('/delete/', methods=["POST"])
 def delete():
     """gets userid from form delete corresponding record from Users table"""
     if request.form:
@@ -80,14 +80,14 @@ def delete():
 
 
 # Search Form
-@app_crud.route('/search/')
+@books_crud.route('/search/')
 def search():
     """loads form to search Users data"""
     return render_template("search.html")
 
 
 # Search request and response
-@app_crud.route('/search/term/', methods=["POST"])
+@books_crud.route('/search/term/', methods=["POST"])
 def search_term():
     """ obtain term/search request """
     req = request.get_json()

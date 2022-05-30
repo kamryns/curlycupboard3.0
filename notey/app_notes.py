@@ -9,7 +9,7 @@ app_notes = Blueprint('notes', __name__,
                       url_prefix='/notes',
                       template_folder='templates/notes/',
                       static_folder='static',
-                      static_url_path='static')
+                      static_url_path='../static')
 
 
 @app_notes.route('/notes')
