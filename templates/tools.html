@@ -56,26 +56,32 @@
             <p>Book Wheel</p>
         </div>
         <div class="nine">
-            <a href={{ url_for('index') }}>
+            <a href={{ url_for('notes.notes') }}>
                 <img id="nine" src="/static/assets/nine.png" width=240" height="240">
             </a>
             <p>Notes</p>
         </div>
         <div class="ten">
-            <a href={{ url_for('content.upload') }}>
+            <a href={{ url_for('content.content') }}>
                 <img id="ten" src="/static/assets/ten.png" width=240" height="240">
             </a>
             <p>Upload</p>
         </div>
         <div class="eleven">
-            <a href={{ url_for('index') }}>
+            <a href={{ url_for('database.database') }}>
                 <img id="eleven" src="/static/assets/eleven.png" width=240" height="240">
             </a>
             <p>Reviews</p>
         </div>
         <div class="twelve">
-            <a href={{ url_for('index') }}>
+            <a href={{ url_for('database.search') }}>
                 <img id="twelve" src="/static/assets/twelve.png" width=240" height="240">
+            </a>
+            <p>Reviews Search</p>
+        </div>
+        <div class="thirteen">
+            <a href={{ url_for('plant') }}>
+            <img id="thirteen" src="/static/assets/thirteen.png" width=240" height="240">
             </a>
             <p>Reviews Search</p>
         </div>
@@ -143,6 +149,10 @@
     .twelve {
         grid-column: 4;
         grid-row: 3;
+    }
+    .twelve {
+        grid-column: 1;
+        grid-row: 4;
     }
 </style>
 

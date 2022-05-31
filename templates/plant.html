@@ -2,48 +2,67 @@
 {% block body %}
 <!DOCTYPE html>
 
-<body style="background-image: url('static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
+<body style="background-image: url('/static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
     <p id="plantbuddy">PLANT BUDDY</p>
-    <img src="/static/assets/plant0.png" style="height: 350px; width: auto;" id="plantpic" />
-    <p>How Many Books Have You Read?</p>
-    <button onclick="one()">one</button>
-    <button onclick="two()">two</button>
-    <button onclick="three()">three</button>
-    <button onclick="four()">four</button>
-    <button onclick="five()">five</button>
-    <button onclick="six()">six</button>
-    <button onclick="seven()">seven</button>
-
-
+    <img src="/static/assets/0plant.png" style="height: 350px; width: auto;" id="plantpic" />
+    <p id="many">How Many Books Have You Read?</p>
+    <div id="buttons">
+        <button onclick="one()">one</button>
+        <button onclick="two()">two</button>
+        <button onclick="three()">three</button>
+        <button onclick="four()">four</button>
+        <button onclick="five()">five</button>
+        <button onclick="six()">six</button>
+        <button onclick="seven()">seven</button>
+    </div>
 </body>
 
 <script>
     function one(){
-        document.getElementById("plantpic").src = "/static/assets/plant1.png";
+        document.getElementById("plantpic").src = "/static/assets/1plant.png";
     }
     function two(){
-        document.getElementById("plantpic").src = "/static/assets/plant2.png";
+        document.getElementById("plantpic").src = "/static/assets/2plant.png";
     }
     function three(){
-        document.getElementById("plantpic").src = "/static/assets/plant3.png";
+        document.getElementById("plantpic").src = "/static/assets/3plant.png";
     }
     function four(){
-        document.getElementById("plantpic").src = "/static/assets/plant4.png";
+        document.getElementById("plantpic").src = "/static/assets/4plant.png";
     }
     function five(){
-        document.getElementById("plantpic").src = "/static/assets/plant5.png";
+        document.getElementById("plantpic").src = "/static/assets/5plant.png";
     }
     function six(){
-        document.getElementById("plantpic").src = "/static/assets/plant6.png";
+        document.getElementById("plantpic").src = "/static/assets/6plant.png";
     }
     function seven(){
-        document.getElementById("plantpic").src = "/static/assets/plant7.png";
+        document.getElementById("plantpic").src = "/static/assets/7plant.png";
     }
 </script>
 
 <style>
     #plantbuddy {
-        font-size: 30px;
+        position: relative;
+        font-family: 'Helvetica';
+        font-size: 70px;
+        font-weight: 900;
+        left: 35%;
+    }
+    #plantpic{
+        position: relative;
+        left: 31%;
+    }
+    #many{
+        position: relative;
+        left: 31%;
+    }
+    #buttons{
+        position: relative;
+        left: 31%;
+    }
+    body{
+        color: #ffffff;
     }
 </style>
 
