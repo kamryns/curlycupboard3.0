@@ -19,6 +19,10 @@ thisList = []
 def index():
     return render_template("index.html")
 
+@app.route("/tools/")
+def tools():
+    return render_template("tools.html")
+
 @app.route("/notepad/")
 def notepad():
     return render_template("notepad.html")

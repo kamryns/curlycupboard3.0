@@ -1,0 +1,150 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+<!DOCTYPE html>
+
+
+<body style="background-image: url('/static/assets/toolsBG.jpg'); background-attachment: fixed; background-size: cover;">
+    <br>
+    <br>
+    <br>
+    <div class="wrapper">
+        <div class="one">
+            <a href={{ url_for('tbr') }}>
+                <img id="one" src="/static/assets/one.png" width=240" height="240">
+            </a>
+            <p>To Be Read</p>
+        </div>
+        <div class="two">
+            <a href={{ url_for('notepad') }}>
+                <img id="two" src="/static/assets/two.png" width=240" height="240">
+            </a>
+            <p>Planner</p>
+        </div>
+        <div class="three">
+            <a href={{ url_for('dictionary') }}>
+                <img id="three" src="/static/assets/three.png" width=240" height="240">
+            </a>
+            <p>Dictionary</p>
+        </div>
+        <div class="four">
+            <a href={{ url_for('flashcards') }}>
+                <img id="four" src="/static/assets/four.png" width=240" height="240">
+            </a>
+            <p>Flashcards</p>
+        </div>
+        <div class="five">
+            <a href={{ url_for('songs') }}>
+                <img id="five" src="/static/assets/five.png" width=240" height="240">
+            </a>
+            <p>Music</p>
+        </div>
+        <div class="six">
+            <a href={{ url_for('calender') }}>
+                <img id="six" src="/static/assets/six.png" width=240" height="240">
+            </a>
+            <p>Calendar</p>
+        </div>
+        <div class="seven">
+            <a href={{ url_for('timer') }}>
+                <img id="seven" src="/static/assets/seven.png" width=240" height="240">
+            </a>
+            <p>Timer</p></div>
+        <div class="eight">
+            <a href={{ url_for('bookwheel') }}>
+                <img id="eight" src="/static/assets/eight.png" width=240" height="240">
+            </a>
+            <p>Book Wheel</p>
+        </div>
+        <div class="nine">
+            <a href={{ url_for('index') }}>
+                <img id="nine" src="/static/assets/nine.png" width=240" height="240">
+            </a>
+            <p>Notes</p>
+        </div>
+        <div class="ten">
+            <a href={{ url_for('content.upload') }}>
+                <img id="ten" src="/static/assets/ten.png" width=240" height="240">
+            </a>
+            <p>Upload</p>
+        </div>
+        <div class="eleven">
+            <a href={{ url_for('index') }}>
+                <img id="eleven" src="/static/assets/eleven.png" width=240" height="240">
+            </a>
+            <p>Reviews</p>
+        </div>
+        <div class="twelve">
+            <a href={{ url_for('index') }}>
+                <img id="twelve" src="/static/assets/twelve.png" width=240" height="240">
+            </a>
+            <p>Reviews Search</p>
+        </div>
+    </div>
+</body>
+
+<style>
+    wrapper{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        color: #ffffff;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .four {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .five {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .six {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .seven {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .eight {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .nine {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .ten {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .eleven {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    .twelve {
+        grid-column: 4;
+        grid-row: 3;
+    }
+</style>
+
+
+{% endblock %}
