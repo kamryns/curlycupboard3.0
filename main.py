@@ -6,7 +6,7 @@ import json
 from notey.app_notes import app_notes
 from contenty.app_content import app_content
 import pickle
-
+from flask_login import login_required, current_user
 
 
 app.register_blueprint(app_content)
@@ -23,30 +23,37 @@ def index():
     return render_template("index.html")
 
 @app.route("/tools/")
+
 def tools():
     return render_template("tools.html")
 
 @app.route("/plant/")
+@login_required
 def plant():
     return render_template("plant.html")
 
 @app.route("/notepad/")
+@login_required
 def notepad():
     return render_template("notepad.html")
 
 @app.route("/tbr/")
+@login_required
 def tbr():
     return render_template("tbr.html")
 
 @app.route("/draw/")
+@login_required
 def draw():
     return render_template("draw.html")
 
 @app.route("/songs/")
+@login_required
 def songs():
     return render_template("songs.html")
 
 @app.route("/calender/")
+@login_required
 def calender():
     return render_template("calender.html")
 
@@ -64,26 +71,32 @@ def romeo():
     return render_template("romeo.html")
 
 @app.route("/explorechoice/")
+@login_required
 def echoice():
     return render_template("explorechoice.html")
 
 @app.route("/exploredeeper/")
+@login_required
 def edeeper():
     return render_template("exploredeeper.html")
 
 @app.route("/startexploring/")
+@login_required
 def starte():
     return render_template("startexploring.html")
 
 @app.route("/crossword/")
+@login_required
 def crossword():
     return render_template("crossword.html")
 
 @app.route("/timer/")
+@login_required
 def timer():
     return render_template("timer.html")
 
 @app.route('/dictionary/', methods=['GET','POST'])
+@login_required
 def dictionary():
     try:
         keyword = request.form['keyword']
@@ -104,10 +117,12 @@ def dictionary():
     # print(response.text)
 
 @app.route('/flashcards/')
+@login_required
 def flashcards():
     return render_template("flashcards.html")
 
 @app.route('/beginnerforum/')
+@login_required
 def beginnerforum():
     return render_template("startexploring.html")
 

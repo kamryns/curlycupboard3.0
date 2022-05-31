@@ -1,6 +1,6 @@
 """control dependencies to support CRUD app routes and APIs"""
 from flask import Blueprint, render_template, request, url_for, redirect, jsonify, make_response
-
+from flask_login import login_required, current_user
 from bookdatabase.sqldatabase import *
 
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
@@ -18,6 +18,7 @@ app_database = Blueprint('database', __name__,
 
 # Default URL
 @app_database.route('/')
+@login_required
 def database():
     """obtains all Users from table and loads Admin Form"""
     return render_template("database.html", table=books_all())
@@ -79,6 +80,7 @@ def delete():
 
 # Search Form
 @app_database.route('/search/')
+@login_required
 def search():
     """loads form to search Users data"""
     return render_template("searchdatabase.html")
