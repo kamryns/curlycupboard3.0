@@ -15,6 +15,11 @@
         <button onclick="six()">six</button>
         <button onclick="seven()">seven</button>
     </div>
+    <div id="storage">
+        <br>
+        <button onclick="mySave()">Save</button>
+        <button onclick="myLoad()">Load</button>
+    </div>
 </body>
 
 <script>
@@ -39,6 +44,14 @@
     function seven(){
         document.getElementById("plantpic").src = "/static/assets/7plant.png";
     }
+    function mySave() {
+        var myContent = document.getElementById("plantpic").src;
+        localStorage.setItem("myContent", myContent);
+    }
+    function myLoad() {
+        var myContent = localStorage.getItem("myContent");
+        document.getElementById("plantpic").src = myContent;
+    }
 </script>
 
 <style>
@@ -58,6 +71,10 @@
         left: 31%;
     }
     #buttons{
+        position: relative;
+        left: 31%;
+    }
+    #storage{
         position: relative;
         left: 31%;
     }
