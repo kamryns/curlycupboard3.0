@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<html>
+<body style="background-image: url('/static/assets/img.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+</html>
+<script>
+
+  // Code borrowed from...
+  // https://stackoverflow.com/questions/22607150/getting-the-url-parameters-inside-the-html-page
+  function GetURLParameter(sParam)
+  {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+      var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == sParam)
+      {
+        return sParameterName[1];
+      }
+    }
+  }
+
+  class Comments {
+    //static totalComment = ""
+    static bFirst = true
+
+    static onSubmit() {
+      var currentComment = document.getElementById("comment").value
+      var currentMovie = document.getElementById("movie").value
+      var currentRating = document.getElementById("rating").value
+      var userName = GetURLParameter('user_name');
+      if (this.bFirst) {
+        this.totalComment = document.getElementById("outputBox").value
+        //alert(this.totalComment)
+        this.bFirst = false
+      }
+
+      document.getElementById("comment").value = ""
+      document.getElementById("movie").value = ""
+      document.getElementById("rating").value = ""
+      this.totalComment = this.totalComment  + "User: " + userName + "\n" + "Book: " + currentMovie + "\n" + "Rating: " +
+              currentRating + "\n" + "Comment: " + currentComment + "\n\n"
+      var tmpTotalComment = this.totalComment
+      document.getElementById("outputBox").value = this.totalComment
+
+      //  This code borrowed from:
+      // https://stackoverflow.com/questions/6396101/pure-javascript-send-post-data-without-a-form
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", 'http://127.0.0.1:5000/comments/', true);
+      //xhr.setRequestHeader('Content-Type', 'text/plain');
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify({
+        currentMovie, currentRating, userName, tmpTotalComment
+      }));
+    }
+  }
+</script>
+
+<table>
+  {% for name in attrib_names %}
+  <TR>
+    <TD><label for={{name.textAreaName}} >{{name.labelName}}</label></TD>
+    <TD><textarea id={{name.textAreaName}} placeholder={{name.placeholderName}} rows={{name.rows}} cols={{name.cols}}></textarea></TD>
+  </TR>
+  {% endfor %}
+
+</table>
+
+<input type="button" value="Post" onclick="Comments.onSubmit()">
+
+<table>
+  <TR>
+    <TD><textarea readonly id="outputBox"  rows="30" cols="70">{{persistentComments}} </textarea></TD>
+  </TR>
+</table>
+
+
+
+<style>
+  #outputBox{
+    position:absolute;
+    left:45%;
+    top:10%;
+  }
+</style>
+{% endblock %}
