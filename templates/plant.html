@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 
 <body style="background-image: url('static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
+    <p id="plantbuddy">PLANT BUDDY</p>
     <img src="/static/assets/plant0.png" style="height: 350px; width: auto;" id="plantpic" />
     <p>How Many Books Have You Read?</p>
     <button onclick="one()">one</button>
@@ -38,8 +39,12 @@
     function seven(){
         document.getElementById("plantpic").src = "/static/assets/plant7.png";
     }
-
-
 </script>
+
+<style>
+    #plantbuddy {
+        font-size: 30px;
+    }
+</style>
 
 {% endblock %}
