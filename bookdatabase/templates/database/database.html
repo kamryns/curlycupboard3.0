@@ -57,7 +57,7 @@
                                 <tr>
                                     <td>{{ row['bookID'] }}</td>
                                     <td>{{ row['name'] }}</td>
-                                    <td>{{ row['books'] }}</td>
+                                    <td>{{ row['book'] }}</td>
                                     <td>{{ row['review'] }}</td>
                                 </tr>
                             {% endfor %}
@@ -78,15 +78,15 @@
                         <thead>
                         <tr>
                             <th><label for="name">Name</label></th>
-                            <th><label for="books">books</label></th>
+                            <th><label for="book">Book</label></th>
                             <th><label for="review">Review</label></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td><input type="text" name="name" id="name" booksholder="Your Name Here"required></td>
-                            <td><input type="books" name="books" id="books" booksholder="City Name" required></td>
-                            <td><input type="review" name="review" id="review" booksholder="Enter your Review Here"required></td>
+                            <td><input type="text" name="book" id="book" booksholder="Book Name" required></td>
+                            <td><input type="text" name="review" id="review" booksholder="Enter your Review Here"required></td>
                             <td><input type="submit" value="Create"></td>
                         </tr>
                         </tbody>
