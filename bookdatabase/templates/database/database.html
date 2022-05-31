@@ -43,7 +43,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Place</th>
+                                <th>Book</th>
                                 <th>Review</th>
                             </tr>
                             </thead>
@@ -55,9 +55,9 @@
                                     caution: phone number needs "~" format step to force type to string
                                 -->
                                 <tr>
-                                    <td>{{ row['photoID'] }}</td>
+                                    <td>{{ row['bookID'] }}</td>
                                     <td>{{ row['name'] }}</td>
-                                    <td>{{ row['place'] }}</td>
+                                    <td>{{ row['booke'] }}</td>
                                     <td>{{ row['review'] }}</td>
                                 </tr>
                             {% endfor %}
@@ -78,15 +78,15 @@
                         <thead>
                         <tr>
                             <th><label for="name">Name</label></th>
-                            <th><label for="place">Place</label></th>
+                            <th><label for="booke">booke</label></th>
                             <th><label for="review">Review</label></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td><input type="text" name="name" id="name" placeholder="Your Name Here"required></td>
-                            <td><input type="place" name="place" id="place" placeholder="City Name" required></td>
-                            <td><input type="review" name="review" id="review" placeholder="Enter your Review Here"required></td>
+                            <td><input type="text" name="name" id="name" bookeholder="Your Name Here"required></td>
+                            <td><input type="booke" name="booke" id="booke" bookeholder="City Name" required></td>
+                            <td><input type="review" name="review" id="review" bookeholder="Enter your Review Here"required></td>
                             <td><input type="submit" value="Create"></td>
                         </tr>
                         </tbody>
@@ -106,13 +106,13 @@
                         <h2>Read</h2>
                         <form method="POST" ID="read" action={{url_for('database.read')}} >
                             <table id="read_table">
-                                <tr><th><label for="read_photoid">ID</label></th></tr>
+                                <tr><th><label for="read_bookid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="read_photoid">
-                                            <optgroup label="photoid">
+                                        <select name="bookid" id="read_bookid">
+                                            <optgroup label="bookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
@@ -132,15 +132,15 @@
                         <form method="POST" ID="update" action={{url_for('database.update')}} >
                             <table id="update_table">
                                 <tr>
-                                    <th><label for="update_photoid">ID</label></th>
+                                    <th><label for="update_bookid">ID</label></th>
                                     <th><label for="update_name">Review</label></th>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="update_photoid">
-                                            <optgroup label="photoid">
+                                        <select name="bookid" id="update_bookid">
+                                            <optgroup label="bookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
@@ -158,13 +158,13 @@
                         <h2>Delete</h2>
                         <form method="POST" ID="read" action={{url_for('database.delete')}} >
                             <table id="read_table">
-                                <tr><th><label for="delete_photoid">ID</label></th></tr>
+                                <tr><th><label for="delete_bookid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="delete_photoid">
-                                            <optgroup label="photoid">
+                                        <select name="bookid" id="delete_bookid">
+                                            <optgroup label="bookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>

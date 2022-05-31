@@ -9,9 +9,9 @@
     <script src={{  url_for("database.static", filename="javascript/validation.js", version='101') }}></script>
 
     <script>
-        function create_photo(){
+        function create_book(){
             const name = document.getElementById("name").value;
-            const place = document.getElementById("place").value;
+            const book = document.getElementById("book").value;
             const review = document.getElementById("review").value;
 
             const requestOptions = {
@@ -21,7 +21,7 @@
                     'Authorization': 'Bearer my-token',
                 },
             };
-            const url='/database_api/create/' + name + '/' + place+ '/' + review;
+            const url='/database_api/create/' + name + '/' + book+ '/' + review;
             fetch(url, requestOptions).then(response => {
                 // prepare HTML search result container for new output
                 const resultContainer = document.getElementById("result");
@@ -49,10 +49,10 @@
             })
         }
 
-        function read_photo(){
-            const get_photoid = document.getElementById("read_photoid");
-            const photoID = get_photoid.value;
-            const url='/database_api/read/' + photoID;
+        function read_book(){
+            const get_bookid = document.getElementById("read_bookid");
+            const bookID = get_bookid.value;
+            const url='/database_api/read/' + bookID;
             const requestOptions = {
                 method: 'GET',
             };
@@ -87,10 +87,10 @@
             })
         }
 
-        function update_photo() {
-            const photoname = document.getElementById("update_name").value;
-            const photoid = document.getElementById("update_photoid").value;
-            const url = '/database_api/update/' + photoid + '/' + photoname;
+        function update_book() {
+            const bookname = document.getElementById("update_name").value;
+            const bookid = document.getElementById("update_bookid").value;
+            const url = '/database_api/update/' + bookid + '/' + bookname;
             const requestOptions = {
                 method: 'PUT',
                 headers: {
@@ -103,17 +103,17 @@
                 const table = document.getElementById("result");
                 response.json().then(data => {
                     console.log(data);
-                    const updateRow = $("#result td:contains("+photoid+")").closest("tr").find("td");
-                    updateRow[1].innerHTML = photoname;
+                    const updateRow = $("#result td:contains("+bookid+")").closest("tr").find("td");
+                    updateRow[1].innerHTML = bookname;
                     console.log(updateRow);
 
                 })
             })
         }
 
-        function delete_photo(){
-            const photoid = document.getElementById("delete_photoid").value;
-            const url = '/database_api/delete/' + photoid;
+        function delete_book(){
+            const bookid = document.getElementById("delete_bookid").value;
+            const url = '/database_api/delete/' + bookid;
             const requestOptions = {
                 method: 'DELETE',
                 headers: {
@@ -126,7 +126,7 @@
 
                 response.json().then(data => {
                     console.log(data);
-                    $("#"+"result").find("td:contains('"+photoid+"')").closest('tr').remove();
+                    $("#"+"result").find("td:contains('"+bookid+"')").closest('tr').remove();
                     })
             })
         }
@@ -164,7 +164,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>place</th>
+                                <th>book</th>
                                 <th>Review</th>
                             </tr>
                             </thead>
@@ -176,7 +176,7 @@
                                     caution: phone number needs "~" format step to force type to string
                                 -->
                                 <tr>
-                                    <td>{{ row['photoID'] }}</td>
+                                    <td>{{ row['bookID'] }}</td>
                                     <td>{{ row['name'] }}</td>
                                     <td>{{ row['review'] }}</td>
                                 </tr>
@@ -195,16 +195,16 @@
                         <thead>
                         <tr>
                             <th><label for="name">Name</label></th>
-                            <th><label for="place">place</label></th>
+                            <th><label for="book">book</label></th>
                             <th><label for="review">Review</label></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td><input type="text" name="name" id="name" required></td>
-                            <td><input type="place" name="place" id="place" placeholder="abc@xyz.org" required></td>
+                            <td><input type="book" name="book" id="book" placeholder="abc@xyz.org" required></td>
                             <td><input type="review" name="review" id="review" required></td>
-                            <td><button onclick="create_photo()">Create</button></td>
+                            <td><button onclick="create_book()">Create</button></td>
 
                         </tr>
                         </tbody>
@@ -219,20 +219,20 @@
                         <h2>Read</h2>
                         <!-- <input type="submit" value="Read" -->
                             <table id="read_table">
-                                <tr><th><label for="read_photoid">ID</label></th></tr>
+                                <tr><th><label for="read_bookid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="read_photoid">
-                                            <optgroup label="photoid" id="ogphotoid">
+                                        <select name="bookid" id="read_bookid">
+                                            <optgroup label="bookid" id="ogbookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
                                     </td>
                                     <td>
                                         <!-- <input type="submit" value="Read" -->
-                                        <button onclick="read_photo()">Read</button>
+                                        <button onclick="read_book()">Read</button>
                                     </td>
                                 </tr>
                             </table>
@@ -243,22 +243,22 @@
                         <h2>Update</h2>
                             <table id="update_table">
                                 <tr>
-                                    <th><label for="update_photoid">ID</label></th>
+                                    <th><label for="update_bookid">ID</label></th>
                                     <th><label for="update_name">Name</label></th>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="update_photoid">
-                                            <optgroup label="photoid" id="ogphotoid">
+                                        <select name="bookid" id="update_bookid">
+                                            <optgroup label="bookid" id="ogbookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
                                     </td>
                                     <td><input type="text" name="name" id="update_name" required></td>
                                     <!-- td><input type="submit" value="Update"></td -->
-                                    <td> <button onclick="update_photo()">Update</button>
+                                    <td> <button onclick="update_book()">Update</button>
                                     </td>
                                 </tr>
                             </table>
@@ -268,18 +268,18 @@
                     <div class="p-5 mb-4 bg-light text-dark rounded-3">
                         <h2>Delete</h2>
                             <table id="read_table">
-                                <tr><th><label for="delete_photoid">ID</label></th></tr>
+                                <tr><th><label for="delete_bookid">ID</label></th></tr>
                                 <tr>
                                     <td>
-                                        <select name="photoid" id="delete_photoid">
-                                            <optgroup label="photoid" id="ogphotoid">
+                                        <select name="bookid" id="delete_bookid">
+                                            <optgroup label="bookid" id="ogbookid">
                                                 {% for row in table %}
-                                                    <option label="{{ row['photoID'] }}">{{ row['photoID'] }}</option>
+                                                    <option label="{{ row['bookID'] }}">{{ row['bookID'] }}</option>
                                                 {% endfor %}
                                             </optgroup>
                                         </select>
                                     </td>
-                                    <td><button onclick="delete_photo()">Delete</button></td>
+                                    <td><button onclick="delete_book()">Delete</button></td>
                                 </tr>
                             </table>
                     </div>
