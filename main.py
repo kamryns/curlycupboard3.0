@@ -23,6 +23,10 @@ def index():
 def tools():
     return render_template("tools.html")
 
+@app.route("/plant/")
+def plant():
+    return render_template("plant.html")
+
 @app.route("/notepad/")
 def notepad():
     return render_template("notepad.html")

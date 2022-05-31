@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+<!DOCTYPE html>
+
+<body style="background-image: url('static/assets/blantBG.jpg/'); background-attachment: fixed; background-size: cover;">
+    <img src=blant style="height: 110px; width: auto;" id="plant" />
+    <p>How Many Books Have You Read?</p>
+    number selection thing id="number"
+
+</body>
+
+<script>
+    function plant(){
+        var blant = document.getElementById("plant");
+        var plantnum = document.getElementById("number");
+        if(plantnum == 1){
+            blant = "static/assets/plant1.jpg";
+        }
+        if(plantnum == 2){
+            blant = "static/assets/plant2.jpg";
+        }
+        if(plantnum == 3){
+            blant = "static/assets/plant3.jpg";
+        }
+        if(plantnum == 4){
+            blant = "static/assets/plant4.jpg";
+        }
+        if(plantnum == 5){
+            blant = "static/assets/plant5.jpg";
+        }
+        if(plantnum == 6){
+            blant = "static/assets/plant6.jpg";
+        }
+        if(plantnum == 7){
+            blant = "static/assets/plant7.jpg";
+        }
+    }
+
+</script>
+
+{% endblock %}
