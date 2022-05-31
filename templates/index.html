@@ -1,10 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block body %}
 
-    {% if current_user.is_authenticated %}
-        <p style ='...'> {{ current_user.name }} is logged in</p>
-    {% endif %}
-    <a href={{url_for('crud.crud_logout')}}>Logout</a>
+
     <!DOCTYPE html>
     <body style="background-image: url('/static/assets/leaves.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
     <br>

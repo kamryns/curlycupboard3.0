@@ -35,6 +35,18 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             </li>
         </div>
     </div>
-
+    {% if current_user.is_authenticated %}
+        <p id="loggedin"> {{ current_user.name }} is logged in</p>
+    {% endif %}
+    <a id="logout" href={{url_for('crud.crud_logout')}}>Logout</a>
 </nav>
+
+<style>
+    #loggedin{
+        color: #ffffff;
+    }
+    #logout{
+        color: #ffffff;
+    }
+</style>
 
