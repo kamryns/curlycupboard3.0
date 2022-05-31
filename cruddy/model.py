@@ -14,33 +14,6 @@ from flask_login import UserMixin
 # -- a.) db.Model is like an inner layer of the onion in ORM
 # -- b.) Users represents data we want to store, something that is built on db.Model
 # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
-class Discussion(db.Model):
-    __tablename__ = 'discussion'
-
-    uid = db.Column(db.Integer, primary_key=True)
-    post = db.Column(db.Text, unique=False, nullable=False)
-
-    def __init__(self, post):
-        self.post = post
-
-    def __repr__(self):
-        return "Posts(" + str(self.uid) + "," + self.post + ",)"
-
-    def create(self):
-        try:
-            # creates a person object from Users(db.Model) class, passes initializers
-            db.session.add(self)  # add prepares to persist person object to Users table
-            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
-            return self
-        except IntegrityError:
-            db.session.remove()
-            return None
-
-    def read(self):
-        return {
-            "User ID": self.uid,
-            "post": self.post,
-        }
 
 class Notes(db.Model):
     __tablename__ = 'notes'

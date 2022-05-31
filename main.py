@@ -119,10 +119,6 @@ def delete():
 def bookwheel():
     return render_template("bookwheel.html")
 
-if __name__ == "__main__":
+if __name__ == "__main__" :
     # runs the application on the repl development server
-    app.run(
-        host='127.0.0.1',
-        debug=True,
-        port=8080
-    )
+    app.run(debug=True, port="5224")
