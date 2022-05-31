@@ -10,6 +10,8 @@ app.register_blueprint(app_content)
 app.register_blueprint(app_crud)
 app.register_blueprint(app_notes)
 
+from bookdatabase.app_database import app_database
+app.register_blueprint(app_database)
 
 thisList = []
 
