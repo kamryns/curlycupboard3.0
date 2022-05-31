@@ -2,39 +2,43 @@
 {% block body %}
 <!DOCTYPE html>
 
-<body style="background-image: url('static/assets/blantBG.jpg/'); background-attachment: fixed; background-size: cover;">
-    <img src=blant style="height: 110px; width: auto;" id="plant" />
+<body style="background-image: url('static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
+    <img src="/static/assets/plant0.png" style="height: 350px; width: auto;" id="plantpic" />
     <p>How Many Books Have You Read?</p>
-    number selection thing id="number"
+    <button onclick="one()">one</button>
+    <button onclick="two()">two</button>
+    <button onclick="three()">three</button>
+    <button onclick="four()">four</button>
+    <button onclick="five()">five</button>
+    <button onclick="six()">six</button>
+    <button onclick="seven()">seven</button>
+
 
 </body>
 
 <script>
-    function plant(){
-        var blant = document.getElementById("plant");
-        var plantnum = document.getElementById("number");
-        if(plantnum == 1){
-            blant = "static/assets/plant1.jpg";
-        }
-        if(plantnum == 2){
-            blant = "static/assets/plant2.jpg";
-        }
-        if(plantnum == 3){
-            blant = "static/assets/plant3.jpg";
-        }
-        if(plantnum == 4){
-            blant = "static/assets/plant4.jpg";
-        }
-        if(plantnum == 5){
-            blant = "static/assets/plant5.jpg";
-        }
-        if(plantnum == 6){
-            blant = "static/assets/plant6.jpg";
-        }
-        if(plantnum == 7){
-            blant = "static/assets/plant7.jpg";
-        }
+    function one(){
+        document.getElementById("plantpic").src = "/static/assets/plant1.png";
     }
+    function two(){
+        document.getElementById("plantpic").src = "/static/assets/plant2.png";
+    }
+    function three(){
+        document.getElementById("plantpic").src = "/static/assets/plant3.png";
+    }
+    function four(){
+        document.getElementById("plantpic").src = "/static/assets/plant4.png";
+    }
+    function five(){
+        document.getElementById("plantpic").src = "/static/assets/plant5.png";
+    }
+    function six(){
+        document.getElementById("plantpic").src = "/static/assets/plant6.png";
+    }
+    function seven(){
+        document.getElementById("plantpic").src = "/static/assets/plant7.png";
+    }
+
 
 </script>
 
