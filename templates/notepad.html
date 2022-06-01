@@ -69,6 +69,7 @@
     function printNote(noteText){
         var node0 = document.createElement("div");
         var node1 = document.createElement("h1");
+        node0.setAttribute("class", "noteDiv");
 
         node1.innerHTML = noteText;
         node1.setAttribute("style", "width:250px ; height:250px ; font-size:26px ; color: #191b23 ; padding:25px ; margin-top:10px ; margin-right:30px ; overflow:hidden ; box-shadow: 10px 10px 10px 0px rgba(75, 75, 75, 0.75) ; background: #faedc3 ");
@@ -76,8 +77,21 @@
         node1.style.transform = rotate();
         node1.style.background = color();*/
         node0.appendChild(node1);
-
+        var deleteButton = document.createElement("button")
+        deleteButton.innerHTML="delete";
+        deleteButton.setAttribute("onclick","deletebutton(" + document.getElementsByClassName("noteDiv").length + ")");
+        node0.appendChild(deleteButton);
         container2.insertAdjacentElement("beforeend",node0);
+    }
+
+    function deletebutton(index) {
+        container2.removeChild(document.getElementsByClassName("noteDiv")[index]);
+        noteArray.splice(index, 1);
+        localStorage.setItem("noteText",JSON.stringify(noteArray));
+        var noteDivs = document.getElementsByClassName("noteDiv");
+        for (var i = 0; i < noteDivs.length; i++) {
+            noteDivs[i].children[1].setAttribute("onclick", "deletebutton(" + i + ")");
+        }
     }
 
     /*function margin(){
