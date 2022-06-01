@@ -26,6 +26,12 @@
 <td>
 <a href="https://github.com/kamryns/curlycupboard3.0/issues/26" target="_blank">Review Ticket</a>
 </td>
+<td>N@M!</td>
+<td>
+<a href="https://github.com/kamryns/curlycupboard3.0/issues/47" target="_blank">Review Ticket</a>
+ <a href="https://github.com/kamryns/curlycupboard3.0/issues/47" target="_blank">Tech Capture!</a>
+</td>
+<tr>
 </table>
 
 
