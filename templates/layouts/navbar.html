@@ -35,14 +35,22 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             </li>
         </div>
     </div>
+    <IMG SRC="/static/assets/profile.png/ " height="30px" width="30px" id="profile">
     {% if current_user.is_authenticated %}
-        <p id="loggedin"> {{ current_user.name }} is logged in</p>
+        <p id="loggedin"> {{ current_user.name }} </p>
     {% endif %}
     <a id="logout" href={{url_for('crud.crud_logout')}}>Logout</a>
 </nav>
 
 <style>
+    #profile{
+        position: relative;
+        right: 2.8%;
+    }
     #loggedin{
+        position: relative;
+        right: 2.1%;
+        top: 8px;
         color: #ffffff;
     }
     #logout{
