@@ -49,7 +49,6 @@ Hack #3 establish a strategy to manage data being stored through Amazon S3 bucke
 # A global variable is used to provide feedback for session to users, but is considered short term solution
 files_uploaded = []
 
-
 # Page to upload content page
 @app_content.route('/')
 @login_required
