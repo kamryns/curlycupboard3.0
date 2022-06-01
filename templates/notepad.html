@@ -29,17 +29,26 @@
 </body>
 
 <script>
+    if(localStorage.getItem("noteText")===null){
+        localStorage.setItem("noteText",'');
+    }
+    var noteArray = [];
+    if(localStorage.getItem("noteText") != ""){
+        noteArray = JSON.parse(localStorage.getItem("noteText"));
+    }
     var container2 = document.getElementsByClassName("container2")[0];
     var container3 = document.getElementsByClassName("container3")[0];
     var checkicon = document.getElementById("check-icon");
     var xicon = document.getElementById("x-icon");
     var i = 0;
-
+    for(var i=0; i<noteArray.length; i++){
+        printNote(noteArray[i]);
+    }
     xicon.addEventListener("click", function(){
         typeNote();
     })
     checkicon.addEventListener("click", function(){
-        createNote();
+        createNote(document.getElementById("note-text").value);
     })
 
     function typeNote(){
@@ -51,8 +60,13 @@
         }
     }
 
-    function createNote(){
-        var noteText = document.getElementById("note-text").value;
+    function createNote(noteText){
+        noteArray.push(noteText);
+        localStorage.setItem("noteText",JSON.stringify(noteArray));
+        printNote(noteText);
+    }
+
+    function printNote(noteText){
         var node0 = document.createElement("div");
         var node1 = document.createElement("h1");
 
