@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename
 
 from cruddy.query import user_by_id
 
+
 # blueprint defaults https://flask.palletsprojects.com/en/2.0.x/api/#blueprint-objects
 app_content = Blueprint('content', __name__,
                         url_prefix='/content',
@@ -53,10 +54,14 @@ files_uploaded = []
 @app_content.route('/')
 @login_required
 def content():
+    #kdf = open('/Users/kamrynsinsuan/IdeaProjects/curlycupboard3.0/KammyDebug.txt', 'wt+')
+    #if len(files_uploaded) > 0:
+        #kdf.writelines('in content function: %s \n' % files_uploaded[0])
     # grab user object (uo) based on current login
     uo = user_by_id(current_user.userID)
     user = uo.read()  # extract user record (Dictionary)
     # load content page
+    #kdf.close()
     return render_template('content.html', user=user, files=files_uploaded)
 
 
@@ -64,6 +69,7 @@ def content():
 @app_content.route('/upload/', methods=["POST"])
 @login_required
 def upload():
+    #kdf = open('/Users/kamrynsinsuan/IdeaProjects/curlycupboard3.0/KammyDebug.txt', 'wt+')
     try:
         # grab file object (fo) from user input
         # The fo variable holds the submitted file object. This is an instance of class FileStorage, which Flask imports from Werkzeug.
@@ -71,12 +77,15 @@ def upload():
         # save file to location defined in __init__.py
         # ... os.path uses os specific pathing for web server
         # ... secure_filename checks for integrity of name for operating system. Pass it a filename and it will return a secure version of it.
-
-        fo.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(fo.filename)))
+        #kdf.writelines('save file: %s\n' % url_for('static', filename='uploads/' + secure_filename(fo.filename)))
+        savePathName = os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(fo.filename))
+        fo.save(savePathName)
         # ... add to files_uploaded to give feedback of success on HTML page
-        files_uploaded.insert(0, url_for('static', filename='uploads/' + fo.filename))
+        #files_uploaded.insert(0, url_for('static', filename=app.config['STATIC_UPLOAD']))
+        files_uploaded.insert(0, url_for('static', filename='uploads/' + secure_filename(fo.filename)))
     except:
         # errors handled, but specific errors are not messaged to user
         pass
     # reload content page
+    #kdf.close()
     return redirect(url_for('content.content'))

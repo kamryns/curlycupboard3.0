@@ -12,7 +12,7 @@ These object will be used throughout project.
 
 # Setup of key Flask object (app)
 app = Flask(__name__)
-UPLOAD_FOLDER = 'static/uploads/'
+app.config['UPLOAD_FOLDER'] = '/Users/kamrynsinsuan/IdeaProjects/curlycupboard3.0/static/uploads'
 dbURI = 'sqlite:///model/myDB.db'
 # Setup SQLAlchemy object and properties for the database (db)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

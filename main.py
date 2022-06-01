@@ -147,27 +147,10 @@ def delete():
 def bookwheel():
     return render_template("bookwheel.html")
 
-@app.route('/rewording/', methods=['GET', 'POST'])
-def rewording():
-    if request.form:
-        url = "https://rimedia-paraphraser.p.rapidapi.com/api_paraphrase.php"
-        user_text = request.form.get("user_text")
-        if len(user_text) != 0:
-            querystring = {"text": user_text, "lang":"en"}
-            headers = {
-                'content-type': "application/x-www-form-urlencoded",
-                'x-rapidapi-host': "rimedia-paraphraser.p.rapidapi.com",
-                'x-rapidapi-key': "e2d0d1a7efmsh5668be741c711ffp1a3e44jsnfc9e0a91c2b2"
-            }
-            response = requests.request("POST", url, data=querystring, headers=headers)
-            return render_template("rewording.html", results=response.json())
-    else:
-        return render_template("rewording.html", results="")
-
 @app.route('/reviews/', methods=['GET'])
 def reviews():
     #kdf = open('KammyDebug.txt', 'wt+')
-    #fileInfoStorage = open('/reviews.bin', 'rb')
+    #fileInfoStorage = open('/Users/kamrynsinsuan/IdeaProjects/curlycupboard3.0/reviews.bin', 'rb')
     try:
         #dataDict = pickle.load(fileInfoStorage)
         tmpComments = dataDict['tmpTotalComment']
@@ -176,7 +159,7 @@ def reviews():
         tmpComments = ""
 
     attrib_names = [
-        {'labelName': "Books:", "textAreaName": "movie", "placeholderName": "Title", "rows": "1", "cols": "32"},
+        {'labelName': "Book:", "textAreaName": "movie", "placeholderName": "Title", "rows": "1", "cols": "32"},
         {'labelName': "Rating:", "textAreaName": "rating", "placeholderName": "1-5", "rows": "1", "cols": "32"},
         {'labelName': "Comment:", "textAreaName": "comment", "placeholderName": "Review!", "rows": "10", "cols": "32"},
     ]
@@ -187,11 +170,11 @@ def reviews():
 
 @app.route('/reviews/', methods=['POST'])
 def storeComments():
-    # kdf = open('KammyDebug.txt', 'wt+')
-    #fileInfoStorage = open('templates/reviews.bin', 'wb+')
+    #kdf = open('KammyDebug.txt', 'wt+')
+    #fileInfoStorage = open('/Users/kamrynsinsuan/IdeaProjects/curlycupboard3.0/reviews.bin', 'wb+')
     blob = request.data
     dataDict = json.loads(bytes.decode(blob))
-    pickle.dump(dataDict, fileInfoStorage)
+    #pickle.dump(dataDict, fileInfoStorage)
     #kdf.writelines('Storing Comments: %s\n' % dataDict)
     #kdf.close()
     #fileInfoStorage.close()
