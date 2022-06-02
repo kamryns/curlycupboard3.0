@@ -1,4 +1,42 @@
 {% include navigation.html %}
+
+### Deployed WEBSITE: [HERE!](http://junglebooks.nighthawkcodingsociety.com/)
+### View FUN COMMERICAL for our website [HERE](https://www.youtube.com/watch?v=jAnrkZXIgco)
+
+#N@M PROJECT COMPLETIONS:
+
+## Tech Guidelines:
+-**Individual assignments and completion**
+-  Each individual scrum member had different roles. We didn't just make the technical officer do technicals, or the Design Manager make the CSS. Rather we all pitched in, and helped out when the other scrum member was stuck. Here is our Scrumboard/Commits showing our major contributions this trimester!
+- <img width="737" alt="Screen Shot 2022-06-01 at 5 00 48 PM" src="https://user-images.githubusercontent.com/89274189/171520683-2a8178fd-af94-4631-9632-04d204484031.png">
+- As you can see each person had their own tasks. Whenever someone was stuck (for example Riya being stuck on content hacks, another member, Kammy, jumped in to help her)
+
+- **Sponsor approval**
+- We met on a regulra basis with our sponsor, Mrs. Dafoe who offered us feedback! We invited her to night at the muesuem, and just recently showed her our website and she loved the final looK! <img width="834" alt="Screen Shot 2022-06-01 at 5 06 51 PM" src="https://user-images.githubusercontent.com/89274189/171521179-2d855adf-21e0-48ac-bdac-425db66c78eb.png">
+- Here is our sponsor page where we documented all of our feedback from her!
+
+- **N@M**
+- Our whole group was present at N@M. Here are some pics:
+
+- **Our commercial is linked at the top of this page**
+
+
+## Tech Requirements:
+**- Database with multiple tables:**
+<img width="1412" alt="Screen Shot 2022-06-01 at 5 11 14 PM" src="https://user-images.githubusercontent.com/89274189/171521614-44180434-4c02-4573-82a9-021425462112.png">
+- Linked to model.py
+- **Authorization controls**
+<img width="1390" alt="Screen Shot 2022-06-01 at 5 12 14 PM" src="https://user-images.githubusercontent.com/89274189/171521692-0a83f90c-4b2c-4042-8cae-f2ab76fe63af.png">
+- User is prompted to sign in or make an account before being allowed to access any of the tools. 
+- **Notes and Upload**
+- <img width="1439" alt="Screen Shot 2022-06-01 at 5 13 17 PM" src="https://user-images.githubusercontent.com/89274189/171521770-ac997754-4b72-4050-bef2-70b34ca24108.png">
+- <img width="1318" alt="Screen Shot 2022-06-01 at 5 14 11 PM" src="https://user-images.githubusercontent.com/89274189/171521879-43768ad4-25c0-40f4-8743-7817c0155043.png">
+- **Tons of other helpful features**
+- <img width="1440" alt="Screen Shot 2022-06-01 at 5 14 51 PM" src="https://user-images.githubusercontent.com/89274189/171521934-6d03ce96-9ea9-4e04-b36c-4623d5d42710.png">
+
+
+
+
 # Diagramed outline of our project!
 
 ## Overview + Home + Signup Wireframes:
