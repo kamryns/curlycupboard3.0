@@ -59,4 +59,42 @@ Feedback/Requirement:
 </td>
 </tr>
 
+
+<td>Week 6</td>
+<td>  
+Feedback/Requirement:
+<br>
+
+- more interactive features for students - maybe a notepad with local storage
+
+- organize tools - maybe separate into different categories rather than one dropdown menu
+
+- implement more security to keep everything school appropriate - add another login check to forum feature
+
+-  reading calendar to help students keep a consistent schedule<br>
+</td>
+</tr>
+
+
+<td>Week 8</td>
+<td>  
+Feedback/Requirement:
+<br>
+
+- format the website so it better reflects the two groups (explore deeper and start exploring)
+
+- add more features that encourages students to continue reading and return to the site
+
+- think about adding features about recording/timing a reading session
+
+- make website easier to navigate for first time visitors
+
+- organize tools better
+
+-  reading timer
+
+-  Reading log
+</td>
+</tr>
+
 </table>
