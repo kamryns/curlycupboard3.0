@@ -2,7 +2,7 @@
 {% block body %}
 <!DOCTYPE html>
 
-<body style="background-image: url('/static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
+<body onload="myLoad()" style="background-image: url('/static/assets/blantBG.jpg'); background-attachment: fixed; background-size: cover;">
     <p id="plantbuddy">PLANT BUDDY</p>
     <img src="/static/assets/0plant.png" style="height: 350px; width: auto;" id="plantpic" />
     <p id="many">How Many Books Have You Read?</p>
@@ -30,7 +30,6 @@
     <div id="storage">
         <br>
         <button onclick="mySave()">Save</button>
-        <button onclick="myLoad()">Load</button>
     </div>
 </body>
 
